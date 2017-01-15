@@ -1,0 +1,19 @@
+
+function mutation(arr) {
+  
+    contador = 0;
+    p = arr[0].toLowerCase();
+    t = arr[1].toLowerCase();
+    for (x = 0;x < t.length;x++){
+      for (i =0; i < p.length;i++){
+        if (p[i].indexOf(t[x]) === 0){
+        contador++;
+          break;
+        }
+      }
+      
+    }
+   return contador == arr[1].length;
+  
+}
+mutation(["hello", "Hello"]);
